@@ -164,7 +164,7 @@ export default function Home() {
           <Mark />
           <button className="menu-toggle" aria-label="Mở điều hướng" aria-expanded={menuOpen} onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? "Đóng" : "Menu"} <span>{menuOpen ? "×" : "☰"}</span></button>
           <nav className={menuOpen ? "nav-links nav-open" : "nav-links"} aria-label="Điều hướng chính" onClick={() => setMenuOpen(false)}>
-            <a href="#hanh-lang">{english ? "Projects" : "Dự án"}</a><a href="#mo-hinh">{english ? "Model" : "Mô hình"}</a><a href="#kien-truc-ha-tang">{english ? "Infrastructure" : "Hạ tầng"}</a><a href="#hanh-lang">{english ? "Trade corridor" : "Hành lang"}</a>
+            <a href="#hanh-lang">{english ? "Projects" : "Dự án"}</a><a href="#mo-hinh">{english ? "Model" : "Mô hình"}</a><a href="#kien-truc-ha-tang">{english ? "Infrastructure" : "Hạ tầng"}</a><a href="#hanh-lang">{english ? "Trade corridor" : "Hành lang"}</a><a href="#doi-ngu">{english ? "Our team" : "Đội ngũ"}</a>
             <span className="language-toggle" aria-label="Language"><button type="button" onClick={() => changeLanguage("VI")} aria-pressed={!english}>VI</button><i>|</i><button type="button" onClick={() => changeLanguage("EN")} aria-pressed={english}>EN</button></span>
             <a className="nav-cta" href="#lien-he">{english ? "Contact CFN" : "Kết nối với CFN"} <Arrow diagonal /></a>
           </nav>
@@ -302,6 +302,21 @@ export default function Home() {
           <div className="corridor-overview-row"><strong>{english ? "Vietnam – Singapore" : "Việt Nam – Singapore"}</strong><span>{english ? "IN DESIGN" : "ĐANG THIẾT KẾ"}</span></div>
           <div className="corridor-overview-row"><strong>{english ? "Vietnam – Hong Kong" : "Việt Nam – Hồng Kông"}</strong><span>{english ? "IN DESIGN" : "ĐANG THIẾT KẾ"}</span></div>
           <div className="corridor-overview-row"><strong>{english ? "Vietnam – Japan" : "Việt Nam – Nhật Bản"}</strong><span>{english ? "IN DESIGN" : "ĐANG THIẾT KẾ"}</span></div>
+        </div>
+      </section>
+
+      <section className="team-section" id="doi-ngu" aria-labelledby="team-title">
+        <div className="team-inner">
+          <div className="team-heading">
+            <div><div className="section-kicker">{english ? "OUR TEAM" : "ĐỘI NGŨ"}</div><h2 id="team-title">{english ? "Built by a specialist alliance." : "Xây dựng bởi một liên minh chuyên môn."}</h2></div>
+            <p>{english ? <>A focused group bringing together CFN’s founding organization, infrastructure technology and policy expertise. <strong>GOE</strong> leads the initiative.</> : <>Một tổ chức đảm nhận một mắt xích cốt lõi của CFN: sáng lập và vận hành, công nghệ hạ tầng, chính sách và hệ sinh thái. <strong>GOE</strong> khởi xướng.</>}</p>
+          </div>
+          <div className="team-grid">
+            <article className="team-card team-goe"><div className="team-logo"><span>GOE</span></div><small>{english ? "FOUNDING ORGANIZATION" : "TỔ CHỨC SÁNG LẬP"}</small><h3>GOE</h3><p>{english ? "Founding organization and CFN initiative lead." : "Tổ chức sáng lập và khởi xướng CFN."}</p></article>
+            <article className="team-card team-tdt"><div className="team-logo"><span>TDT</span></div><small>{english ? "INFRASTRUCTURE TECHNOLOGY" : "CÔNG NGHỆ HẠ TẦNG"}</small><h3>TDT</h3><p>{english ? "Technology infrastructure partner." : "Đối tác công nghệ hạ tầng."}</p></article>
+            <article className="team-card team-tbi"><div className="team-logo"><span>TBI</span></div><small>{english ? "POLICY PARTNER" : "ĐỐI TÁC CHÍNH SÁCH"}</small><h3>TBI</h3><p>{english ? "Policy and ecosystem partner." : "Đối tác chính sách và hệ sinh thái."}</p></article>
+            <article className="team-card team-ecosystem"><div className="team-logo"><span>{english ? "ECOSYSTEM PARTNER" : "ĐỐI TÁC HỆ SINH THÁI"}</span><i>{english ? "PARTNER NETWORK" : "MẠNG LƯỚI ĐỐI TÁC"}</i></div><small>{english ? "ECOSYSTEM PARTNERS" : "ĐỐI TÁC HỆ SINH THÁI"}</small><h3>{english ? "A connected trade network" : "Mạng lưới kết nối thương mại"}</h3><p>{english ? "Banks, logistics providers, independent inspectors and licensed funders support each corridor." : "Ngân hàng, đơn vị logistics, giám định độc lập và Funder được cấp phép đồng hành trên từng hành lang."}</p></article>
+          </div>
         </div>
       </section>
 
