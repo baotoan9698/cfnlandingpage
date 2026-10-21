@@ -456,15 +456,14 @@ body,button,input,select,textarea{font-family:"Manrope",Arial,sans-serif}
 .infrastructure-section:after{background-image:radial-gradient(circle,rgba(85,157,255,.85) 0 1.5px,transparent 2.7px),radial-gradient(circle,rgba(76,145,245,.7) 0 1.4px,transparent 2.5px),linear-gradient(90deg,transparent 0 12%,rgba(47,113,201,.22) 12.05% 12.12%,transparent 12.2% 88%,rgba(47,113,201,.18) 88.05% 88.12%,transparent 88.2%),linear-gradient(0deg,transparent 0 23%,rgba(47,113,201,.17) 23.05% 23.12%,transparent 23.2% 76%,rgba(47,113,201,.17) 76.05% 76.12%,transparent 76.2%)}
 /* Team cards with square, brand-specific illustrations */
 .team-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
-.team-card{display:flex;flex-direction:column;min-height:0;padding:0;overflow:hidden;border:1px solid #e1e8f1;border-top:2px solid #1557ad;border-radius:12px;background:#fff;box-shadow:0 8px 22px rgba(20,48,82,.055)}
-.team-card:hover{transform:translateY(-4px);border-color:#a9c6ea;box-shadow:0 16px 34px rgba(20,74,132,.12)}
-.team-card.team-tdt{border-top-color:#16877f}.team-card.team-tbi{border-top-color:#d2a928}
+.team-card{display:flex;flex-direction:column;min-height:0;padding:0;overflow:hidden;border:1px solid #e5e7eb;border-radius:12px;background:#fff;box-shadow:0 8px 22px rgba(20,48,82,.055)}
+.team-card:hover{transform:translateY(-4px);border-color:#d1d5db;box-shadow:0 16px 34px rgba(20,74,132,.12)}
 .team-image{width:100%;aspect-ratio:1/1;overflow:hidden;background:#fff}
 .team-image svg{display:block;width:100%;height:100%;transition:transform .45s cubic-bezier(.2,.7,.2,1)}
 .team-card:hover .team-image svg{transform:scale(1.035)}
 .team-image .team-logo-image{display:block;width:100%;height:100%;padding:24px;object-fit:contain;background:#fff;transition:transform .45s cubic-bezier(.2,.7,.2,1)}
 .team-image .team-logo-goe{padding:42px}
-.team-image .team-logo-tdt{padding:52px}
+.team-image .team-logo-tdt{padding:52px;scale:.5;transform-origin:center}
 .team-image .team-logo-tbi{padding:34px}
 .team-card:hover .team-image .team-logo-image{transform:scale(1.035)}
 .team-image-network svg{background:#fff}
