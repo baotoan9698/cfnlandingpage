@@ -164,7 +164,7 @@ export default function Home() {
           <Mark />
           <button className="menu-toggle" aria-label="Mở điều hướng" aria-expanded={menuOpen} onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? "Đóng" : "Menu"} <span>{menuOpen ? "×" : "☰"}</span></button>
           <nav className={menuOpen ? "nav-links nav-open" : "nav-links"} aria-label="Điều hướng chính" onClick={() => setMenuOpen(false)}>
-            <a href="#hanh-lang">{english ? "Projects" : "Dự án"}</a><a href="#mo-hinh">{english ? "Model" : "Mô hình"}</a><a href="#kien-truc-ha-tang">{english ? "Infrastructure" : "Hạ tầng"}</a><a href="#hanh-lang">{english ? "Trade corridor" : "Hành lang"}</a><a href="#doi-ngu">{english ? "Our team" : "Đội ngũ"}</a>
+            <a href="#hanh-lang">{english ? "Projects" : "Dự án"}</a><a href="#mo-hinh">{english ? "Model" : "Mô hình"}</a><a href="#kien-truc-ha-tang">{english ? "Infrastructure" : "Hạ tầng"}</a><a href="/exporter">{english ? "Exporters" : "Nhà xuất khẩu"}</a><a href="#doi-ngu">{english ? "Our team" : "Đội ngũ"}</a>
             <span className="language-toggle" aria-label="Language"><button type="button" onClick={() => changeLanguage("VI")} aria-pressed={!english}>VI</button><i>|</i><button type="button" onClick={() => changeLanguage("EN")} aria-pressed={english}>EN</button></span>
             <a className="nav-cta" href="#lien-he">{english ? "Contact CFN" : "Kết nối với CFN"} <Arrow diagonal /></a>
           </nav>
