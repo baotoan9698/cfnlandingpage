@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 900" fill="none">
+  <defs>
+    <linearGradient id="ocean" x1="0" y1="0" x2="1800" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#092247"/>
+      <stop offset=".55" stop-color="#0D3974"/>
+      <stop offset="1" stop-color="#1763A6"/>
+    </linearGradient>
+    <radialGradient id="globe" cx="0" cy="0" r="1" gradientTransform="matrix(-560 520 -520 -560 1420 345)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff"/>
+      <stop offset=".68" stop-color="#EAF3FC"/>
+      <stop offset="1" stop-color="#B8D1EC"/>
+    </radialGradient>
+    <linearGradient id="globeShade" x1="960" y1="140" x2="1740" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#547EAA" stop-opacity=".28"/>
+    </linearGradient>
+    <clipPath id="globeClip"><circle cx="1430" cy="450" r="520"/></clipPath>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="8"/></filter>
+  </defs>
+  <path fill="url(#ocean)" d="M0 0h1800v900H0z"/>
+  <circle cx="1430" cy="450" r="520" fill="url(#globe)"/>
+  <g clip-path="url(#globeClip)" stroke="#9CB5D0" stroke-opacity=".35" stroke-width="2">
+    <ellipse cx="1430" cy="450" rx="500" ry="165"/>
+    <ellipse cx="1430" cy="450" rx="500" ry="330"/>
+    <ellipse cx="1430" cy="450" rx="250" ry="520"/>
+    <ellipse cx="1430" cy="450" rx="420" ry="520"/>
+    <path d="M900 450h1060M940 300h980M940 600h980"/>
+  </g>
+  <g clip-path="url(#globeClip)" fill="#D2DFED" fill-opacity=".76">
+    <path d="m1100 238 53-42 42 15 22 37 57 14 25 39-19 44-42 12-28 42-51-4-30-31-49-15-22-42 18-36-13-33 37 0Zm-42 194 45 9 31 40-14 47-32 20-18 57-35 24-26-22 10-56-22-34 18-49 43-36Zm206-90 53-35 66 8 37 32 66 9 37 47-11 48-54 10-25 42-56 10-30 46-44-13-18-50-49-20-24-53 31-37 71-9Zm85 255 55-17 47 27 6 49-37 44-53-11-39-41 21-51Zm191-352 57-30 72 20 21 42-19 40-58 12-44-20-45-64Zm116 306 35-22 45 15 4 39-36 18-38-18-10-32Z"/>
+  </g>
+  <circle cx="1430" cy="450" r="519" fill="url(#globeShade)"/>
+  <g stroke-linecap="round">
+    <path d="M-40 680C350 325 650 308 1015 470s550 194 828-111" stroke="#7FD5D0" stroke-opacity=".9" stroke-width="3"/>
+    <path d="M-60 768C310 506 637 466 970 330s547-233 867-136" stroke="#8BA7FF" stroke-opacity=".85" stroke-width="3"/>
+    <path d="M116 106c293 318 565 514 883 510s529-180 821-43" stroke="#F0B66C" stroke-opacity=".9" stroke-width="3"/>
+    <path d="M-10 540C377 706 671 707 1015 584s584-37 824 158" stroke="#A6D5FF" stroke-opacity=".62" stroke-width="2" stroke-dasharray="6 12"/>
+  </g>
+  <g fill="#fff" stroke-width="3">
+    <circle cx="196" cy="541" r="9" stroke="#73D3CE"/><circle cx="537" cy="423" r="9" stroke="#8BA7FF"/><circle cx="878" cy="561" r="9" stroke="#F0B66C"/>
+    <circle cx="1165" cy="317" r="9" stroke="#73D3CE"/><circle cx="1544" cy="500" r="9" stroke="#8BA7FF"/><circle cx="1702" cy="357" r="9" stroke="#F0B66C"/>
+  </g>
+  <g fill="#fff" filter="url(#glow)" opacity=".34"><circle cx="196" cy="541" r="15"/><circle cx="537" cy="423" r="15"/><circle cx="878" cy="561" r="15"/><circle cx="1165" cy="317" r="15"/><circle cx="1544" cy="500" r="15"/><circle cx="1702" cy="357" r="15"/></g>
+</svg>
