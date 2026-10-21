@@ -213,7 +213,7 @@ export default function Home() {
           <div><div className="section-kicker">{english ? "A NATIONAL AMBITION" : "MỤC TIÊU CHO QUỐC GIA"}</div>
             <h2 id="national-goal-title">{english ? <>Connect Vietnam’s International Financial Centre to the real economy.</> : <>Góp phần đưa Trung tâm Tài chính Quốc tế Việt Nam gắn với nền kinh tế thực</>}</h2>
           </div>
-          <div className="goal-graphic" aria-hidden="true"><span className="goal-orbit goal-orbit-one"/><span className="goal-orbit goal-orbit-two"/><span className="goal-node goal-node-a"/><span className="goal-node goal-node-b"/><span className="goal-core"><svg className="vn-flag" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50" fill="#DA251D"/><polygon points="50,12 59,39 88,39 65,56 74,84 50,67 26,84 35,56 12,39 41,39" fill="#FFFF00"/></svg></span></div>
+          <div className="goal-graphic"><img className="goal-orbit-image" src="/cfn-vietnam-atom.png" alt={english ? "Vietnam flag at the center of orbital trade connections" : "Lá cờ Việt Nam ở trung tâm các quỹ đạo kết nối thương mại"} /></div>
         </div>
         <div className="national-goal-grid">
           <article><span className="goal-card-index">01</span><div><h3>{english ? "International capital for exports" : "Vốn quốc tế vào xuất khẩu"}</h3><p>{english ? "Open channels for international trade finance to Vietnamese businesses and complement domestic credit." : "Mở kênh vốn thương mại quốc tế cho doanh nghiệp Việt Nam, bổ sung cho tín dụng trong nước."}</p></div><span className="goal-card-arrow">↗</span></article>
@@ -312,10 +312,18 @@ export default function Home() {
             <p>{english ? <>A focused group bringing together CFN’s founding organization, infrastructure technology and policy expertise. <strong>GOE</strong> leads the initiative.</> : <>Một tổ chức đảm nhận một mắt xích cốt lõi của CFN: sáng lập và vận hành, công nghệ hạ tầng, chính sách và hệ sinh thái. <strong>GOE</strong> khởi xướng.</>}</p>
           </div>
           <div className="team-grid">
-            <article className="team-card team-goe"><div className="team-logo"><span>GOE</span></div><small>{english ? "FOUNDING ORGANIZATION" : "TỔ CHỨC SÁNG LẬP"}</small><h3>GOE</h3><p>{english ? "Founding organization and CFN initiative lead." : "Tổ chức sáng lập và khởi xướng CFN."}</p></article>
-            <article className="team-card team-tdt"><div className="team-logo"><span>TDT</span></div><small>{english ? "INFRASTRUCTURE TECHNOLOGY" : "CÔNG NGHỆ HẠ TẦNG"}</small><h3>TDT</h3><p>{english ? "Technology infrastructure partner." : "Đối tác công nghệ hạ tầng."}</p></article>
-            <article className="team-card team-tbi"><div className="team-logo"><span>TBI</span></div><small>{english ? "POLICY PARTNER" : "ĐỐI TÁC CHÍNH SÁCH"}</small><h3>TBI</h3><p>{english ? "Policy and ecosystem partner." : "Đối tác chính sách và hệ sinh thái."}</p></article>
-            <article className="team-card team-ecosystem"><div className="team-logo"><span>{english ? "ECOSYSTEM PARTNER" : "ĐỐI TÁC HỆ SINH THÁI"}</span><i>{english ? "PARTNER NETWORK" : "MẠNG LƯỚI ĐỐI TÁC"}</i></div><small>{english ? "ECOSYSTEM PARTNERS" : "ĐỐI TÁC HỆ SINH THÁI"}</small><h3>{english ? "A connected trade network" : "Mạng lưới kết nối thương mại"}</h3><p>{english ? "Banks, logistics providers, independent inspectors and licensed funders support each corridor." : "Ngân hàng, đơn vị logistics, giám định độc lập và Funder được cấp phép đồng hành trên từng hành lang."}</p></article>
+            <article className="team-card team-goe">
+              <div className="team-image"><img className="team-logo-image team-logo-goe" src="/logo-goe-alliance.png" alt="GOE Alliance — Global On-Chain Economy" /></div>
+              <div className="team-card-content"><h3>GOE ALLIANCE</h3><small>{english ? "FOUNDING ORGANIZATION" : "TỔ CHỨC SÁNG LẬP"}</small><p>{english ? "Founding organization and CFN initiative lead." : "Tổ chức sáng lập và khởi xướng CFN."}</p><a href="#lien-he">{english ? "Learn more" : "Tìm hiểu thêm"} <Arrow /></a></div>
+            </article>
+            <article className="team-card team-tdt">
+              <div className="team-image"><img className="team-logo-image team-logo-tdt" src="/logo-tdt-asia.png" alt="TDT Asia logo" /></div>
+              <div className="team-card-content"><h3>TDT ASIA</h3><small>{english ? "INFRASTRUCTURE TECHNOLOGY" : "CÔNG NGHỆ HẠ TẦNG"}</small><p>{english ? "Technology infrastructure partner." : "Đối tác công nghệ hạ tầng."}</p><a href="#lien-he">{english ? "Learn more" : "Tìm hiểu thêm"} <Arrow /></a></div>
+            </article>
+            <article className="team-card team-tbi">
+              <div className="team-image"><img className="team-logo-image team-logo-tbi" src="/logo-tony-blair-institute.png" alt="Tony Blair Institute for Global Change logo" /></div>
+              <div className="team-card-content"><h3>TONY BLAIR INSTITUTE</h3><small>{english ? "POLICY PARTNER" : "ĐỐI TÁC CHÍNH SÁCH"}</small><p>{english ? "Policy and ecosystem partner." : "Đối tác chính sách và hệ sinh thái."}</p><a href="#lien-he">{english ? "Learn more" : "Tìm hiểu thêm"} <Arrow /></a></div>
+            </article>
           </div>
         </div>
       </section>
