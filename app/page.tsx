@@ -135,7 +135,7 @@ export default function Home() {
   }, []);
   useEffect(() => {
     const textNodes = document.querySelectorAll<HTMLElement>(
-      '#top .hero-copy h1, #top .hero-copy .hero-description, #top .hero-copy .hero-actions, #top .hero-copy .hero-footnote, #top section:not(.mission-section) .section-kicker, #top section:not(.mission-section) .eyebrow, #top section:not(.mission-section) h2, #top section:not(.mission-section) h3, #top section:not(.mission-section) p, #top .metric-index, #top .metric-strip strong, #top .metric-note, #top .process-no, #top .process-tag, #top .stage > *, #top .record-step > *, #top .form-card label, #top .form-heading, #top .footer-brand p, #top .footer-links > div > *, #top .footer-bottom > *'
+      '#top .hero-copy h1, #top .hero-copy .hero-description, #top .hero-copy .hero-actions, #top .hero-copy .hero-footnote, #top section:not(.mission-section) .section-kicker, #top section:not(.mission-section) .eyebrow, #top section:not(.mission-section) .section-title, #top section:not(.mission-section) h2, #top section:not(.mission-section) h3, #top section:not(.mission-section) p, #top .metric-index, #top .metric-strip strong, #top .metric-note, #top .process-no, #top .process-tag, #top .stage > *, #top .record-step > *, #top .form-card label, #top .form-heading, #top .footer-brand p, #top .footer-links > div > *, #top .footer-bottom > *'
     );
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)) return;
     const observer = new IntersectionObserver((entries) => {
@@ -184,7 +184,7 @@ export default function Home() {
 
       <section className="intro section-pad" id="mo-hinh">
         <div className="intro-content">
-          <h2>{english ? <>Goods delivered, capital still waiting.<br /><span>CFN changes that.</span></> : <>Hàng đã giao, vốn vẫn chờ.<br /><span>CFN thay đổi điều đó.</span></>}</h2>
+          <h1 className="section-title">{english ? <>Goods delivered, capital still waiting.<br /><span>CFN changes that.</span></> : <>Hàng đã giao, vốn vẫn chờ.<br /><span>CFN thay đổi điều đó.</span></>}</h1>
           <div className="intro-aside"><p>{english ? "Every export shipment sold on deferred terms creates a documented receivable, but exporters wait 30–90 days to get paid. International capital is ready to fund, yet a shared standard to verify Vietnamese assets is missing." : "Mỗi lô hàng xuất khẩu trả chậm tạo ra một khoản phải thu có đầy đủ chứng từ, nhưng nhà xuất khẩu phải chờ 30–90 ngày mới nhận tiền. Nguồn vốn quốc tế sẵn sàng tài trợ, nhưng thiếu một chuẩn chung để kiểm chứng tài sản từ Việt Nam."}</p><p>{english ? "CFN builds that standard: digital infrastructure to verify and record export receivables, helping banks and funders finance faster and with greater confidence." : "CFN xây dựng chuẩn đó: một hạ tầng số kiểm chứng và ghi nhận khoản phải thu xuất khẩu, để ngân hàng và Funder được cấp phép tài trợ nhanh hơn, an toàn hơn."}</p></div>
         </div>
         <div className="metric-strip">
@@ -198,7 +198,7 @@ export default function Home() {
       <section ref={missionRef} className={`mission-section${missionVisible ? " is-visible" : ""}`} aria-labelledby="mission-title">
         <div className="mission-inner">
           <div className="mission-kicker">{english ? "OUR MISSION" : "SỨ MỆNH"}</div>
-          <h2 id="mission-title">{english ? "Turn Vietnamese businesses’ receivables into trusted, fundable assets for the world." : "Đưa khoản phải thu của doanh nghiệp Việt Nam trở thành nguồn vốn mà thế giới có thể tin cậy và tài trợ."}</h2>
+          <h1 className="section-title" id="mission-title">{english ? "Turn Vietnamese businesses’ receivables into trusted, fundable assets for the world." : "Đưa khoản phải thu của doanh nghiệp Việt Nam trở thành nguồn vốn mà thế giới có thể tin cậy và tài trợ."}</h1>
           <div className="mission-grid">
             <article><svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><circle cx="16" cy="16" r="13" stroke="currentColor" strokeWidth="1.8"/><circle cx="16" cy="16" r="4.5" fill="currentColor"/></svg><h3>{english ? "Transparency" : "Minh bạch"}</h3><p>{english ? "One unique record for each receivable, visible to every authorized party." : "Mỗi khoản phải thu có một bản ghi duy nhất, các bên cùng nhìn thấy."}</p></article>
             <article><svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M16 2.8 28 7v8.5c0 7.3-4.9 11.6-12 14.3C8.9 27.1 4 22.8 4 15.5V7l12-4.2Z" stroke="currentColor" strokeWidth="1.8"/><path d="m10.5 15.8 3.6 3.6 7.7-8" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/></svg><h3>{english ? "Trust" : "Tin cậy"}</h3><p>{english ? "Funding comes from licensed institutions, with money flowing through Vietnamese banks." : "Vốn từ tổ chức được cấp phép, tiền đi qua ngân hàng Việt Nam."}</p></article>
@@ -211,7 +211,7 @@ export default function Home() {
       <section className="national-goal-section section-pad" aria-labelledby="national-goal-title">
         <div className="national-goal-heading">
           <div><div className="section-kicker">{english ? "A NATIONAL AMBITION" : "MỤC TIÊU CHO QUỐC GIA"}</div>
-            <h2 id="national-goal-title">{english ? <>Connect Vietnam’s International Financial Centre to the real economy.</> : <>Góp phần đưa Trung tâm Tài chính Quốc tế Việt Nam gắn với nền kinh tế thực</>}</h2>
+            <h1 className="section-title" id="national-goal-title">{english ? <>Connect Vietnam’s International Financial Centre to the real economy.</> : <>Góp phần đưa Trung tâm Tài chính Quốc tế Việt Nam gắn với nền kinh tế thực</>}</h1>
           </div>
           <div className="goal-graphic"><img className="goal-orbit-image" src="/cfn-vietnam-atom.png" alt={english ? "Vietnam flag at the center of orbital trade connections" : "Lá cờ Việt Nam ở trung tâm các quỹ đạo kết nối thương mại"} /></div>
         </div>
@@ -224,9 +224,11 @@ export default function Home() {
       </section>
 
       <section className="digital-asset-section section-pad" aria-labelledby="digital-asset-title">
-        <div className="digital-asset-copy">
+        <header className="section-heading">
           <div className="section-kicker">{english ? "DIGITAL ASSET PRINCIPLES" : "YẾU TỐ TÀI SẢN SỐ"}</div>
-          <h2 id="digital-asset-title">{english ? "A digitized receivable: one asset, one record, shared visibility." : "Khoản phải thu số hóa: một tài sản, một bản ghi, mọi bên cùng tin."}</h2>
+          <h1 className="section-title" id="digital-asset-title">{english ? "A digitized receivable: one asset, one record, shared visibility." : "Khoản phải thu số hóa: một tài sản, một bản ghi, mọi bên cùng tin."}</h1>
+        </header>
+        <div className="digital-asset-copy">
           <p>{english ? "Each receivable is digitized into a record linked to its contract, documents and cash flow. The record follows the receivable from goods dispatch through settlement." : "Mỗi khoản phải thu được số hóa thành một bản ghi gắn với hợp đồng, chứng từ và dòng tiền. Bản ghi đi cùng khoản phải thu suốt vòng đời, từ khi hàng xuất đến khi tất toán."}</p>
           <div className="digital-asset-note">{english ? "Recognition of digitized receivables as digital assets is proposed for pilot consideration at the Da Nang International Financial Centre." : "Việc công nhận khoản phải thu số hóa là tài sản số đang được đề nghị thí điểm tại Trung tâm Tài chính Quốc tế Đà Nẵng."}</div>
         </div>
@@ -241,7 +243,7 @@ export default function Home() {
         <div className="infra-heading">
           <div className="infra-heading-copy">
             <div className="section-kicker">{english ? "INFRASTRUCTURE ARCHITECTURE" : "KIẾN TRÚC HẠ TẦNG"}</div>
-            <h2 id="infrastructure-title">{english ? "One trusted core, built for every corridor." : "Một lõi hạ tầng, kết nối thêm từng hành lang."}</h2>
+            <h1 className="section-title" id="infrastructure-title">{english ? "One trusted core, built for every corridor." : "Một lõi hạ tầng, kết nối thêm từng hành lang."}</h1>
             <p>{english ? "Exporter, warehouse, carrier, funder and bank data come together in one controlled workflow. CFN verifies, records and coordinates each connection according to local rules." : "Dữ liệu từ nhà xuất khẩu, kho, hãng tàu, Funder và ngân hàng đi vào một cổng duy nhất. Lõi CFN kiểm chứng, ghi nhận và điều phối; mỗi hành lang là một bộ kết nối được cấu hình theo pháp lý sở tại."}</p>
           </div>
           <div className="infra-status"><span className="infra-status-dot" />{english ? "VIETNAM CORE · UAE CORRIDOR" : "LÕI VIỆT NAM · HÀNH LANG UAE"}</div>
@@ -292,9 +294,11 @@ export default function Home() {
       </section>
 
       <section className="corridor-overview-section section-pad" id="hanh-lang" aria-labelledby="corridor-overview-title">
-        <div className="corridor-overview-copy">
+        <header className="section-heading">
           <div className="section-kicker">{english ? "TRADE CORRIDORS" : "HÀNH LANG"}</div>
-          <h2 id="corridor-overview-title">{english ? <>Start with the UAE.<br />Expand across Asia.</> : <>Bắt đầu từ UAE,<br />mở rộng khắp châu Á.</>}</h2>
+          <h1 className="section-title" id="corridor-overview-title">{english ? "Start with the UAE. Expand across Asia." : "Bắt đầu từ UAE, mở rộng khắp châu Á."}</h1>
+        </header>
+        <div className="corridor-overview-copy">
           <p>{english ? "Every corridor shares one verification standard. CFN can expand into new markets as local partners and operating requirements come together." : "Mỗi hành lang mới dùng chung chuẩn kiểm chứng. Doanh nghiệp đã vào CFN có thể mở rộng thị trường mới mà không làm lại từ đầu."}</p>
         </div>
         <div className="corridor-overview-list" aria-label={english ? "CFN trade corridor roadmap" : "Lộ trình hành lang CFN"}>
@@ -308,8 +312,7 @@ export default function Home() {
       <section className="team-section" id="doi-ngu" aria-labelledby="team-title">
         <div className="team-inner">
           <div className="team-heading">
-            <div><div className="section-kicker">{english ? "OUR TEAM" : "ĐỘI NGŨ"}</div><h2 id="team-title">{english ? "Built by a specialist alliance." : "Xây dựng bởi một liên minh chuyên môn."}</h2></div>
-            <p>{english ? <>A focused group bringing together CFN’s founding organization, infrastructure technology and policy expertise. <strong>GOE</strong> leads the initiative.</> : <>Một tổ chức đảm nhận một mắt xích cốt lõi của CFN: sáng lập và vận hành, công nghệ hạ tầng, chính sách và hệ sinh thái. <strong>GOE</strong> khởi xướng.</>}</p>
+            <div><div className="section-kicker">{english ? "OUR TEAM" : "ĐỘI NGŨ"}</div><h1 className="section-title" id="team-title">{english ? "Built by a specialist alliance." : "Xây dựng bởi một liên minh chuyên môn."}</h1></div>
           </div>
           <div className="team-grid">
             <article className="team-card team-goe">
@@ -328,7 +331,31 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="site-footer" id="lien-he"><div className="footer-main"><div className="footer-brand"><Mark light /><p>{english ? <>Data and verification infrastructure<br />for trade finance.</> : <>Hạ tầng dữ liệu và kiểm chứng<br />cho tài trợ thương mại.</>}</p></div><div className="footer-links"><div><span>{english ? "EXPLORE" : "KHÁM PHÁ"}</span><a href="#mo-hinh">{english ? "CFN model" : "Mô hình CFN"}</a><a href="#kien-truc-ha-tang">{english ? "Infrastructure" : "Hạ tầng"}</a><a href="#hanh-lang">{english ? "Trade corridor" : "Hành lang"}</a></div><div><span>{english ? "FOR" : "DÀNH CHO"}</span><a href="#kien-truc-ha-tang">{english ? "Exporters" : "Nhà xuất khẩu"}</a><a href="#kien-truc-ha-tang">{english ? "Funders" : "Tổ chức tài trợ"}</a><a href="#lien-he">{english ? "Partners" : "Đối tác"}</a></div><div><span>{english ? "CONTACT" : "LIÊN HỆ"}</span><a href="mailto:member@goealliance.org">member@goealliance.org</a><a href="#top">{english ? "Da Nang, Vietnam" : "Đà Nẵng, Việt Nam"}</a></div></div></div><div className="footer-bottom"><span>© 2026 GOE CFN</span><span>{english ? "DIGITAL TRADE FINANCE INFRASTRUCTURE" : "HẠ TẦNG TÀI TRỢ THƯƠNG MẠI SỐ"}</span><a href="#top">{english ? "Back to top ↑" : "Về đầu trang ↑"}</a></div></footer>
+      <footer className="site-footer footer-connect" id="lien-he" aria-labelledby="footer-title">
+        <svg className="footer-pattern" viewBox="0 0 720 700" fill="none" aria-hidden="true">
+          <path d="M160-200C50 30 250 155 510 124S832-35 733-117C625-206 297-54 228 154S263 491 433 424 665 133 758 210 624 587 487 754" stroke="currentColor" strokeWidth="27" />
+        </svg>
+        <div className="footer-connect-inner">
+          <div className="footer-connect-intro">
+            <h2 id="footer-title">{english ? "Stay connected" : "Cùng kết nối"}</h2>
+            <p>{english ? "Read our blogs for updates & project highlights" : "Theo dõi những cập nhật và dấu ấn mới của dự án."}</p>
+          </div>
+          <div className="footer-contact-details">
+            <div className="footer-contact-block">
+              <h3>{english ? "Get in touch" : "Liên hệ"}</h3>
+              <a className="footer-phone" href="tel:+84964931661">(+84) 964 93 1661</a>
+              <a className="footer-email" href="mailto:partner@goealliance.org">partner@goealliance.org</a>
+            </div>
+            <div className="footer-address-block">
+              <h3>{english ? "Address" : "Địa chỉ"}</h3>
+              <address>
+                <strong>{english ? "GOE Alliance Office" : "Văn phòng GOE Alliance"}</strong>
+                <span>{english ? "IFC Building, 8 Nguyen Hue Street, Saigon Ward, Ho Chi Minh City" : "Tòa nhà IFC, 8 Nguyễn Huệ, Phường Sài Gòn, Thành phố Hồ Chí Minh"}</span>
+              </address>
+            </div>
+          </div>
+        </div>
+      </footer>
       <div className="scroll-end-blur" aria-hidden="true" />
     </main>
   );
