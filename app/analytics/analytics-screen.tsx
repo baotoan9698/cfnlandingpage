@@ -28,11 +28,14 @@ function BarChart({ values, labels }: { values: readonly number[]; labels: reado
 }
 
 function LineChart({ values, labels }: { values: readonly number[]; labels: readonly string[] }) {
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const max = Math.max(...values);
   const points = values.map((value, index) => `${index / (values.length - 1) * 100},${100 - value / max * 78 - 9}`).join(" ");
   return <div className={s.chartWrap} role="img" aria-label="Tổng lũy kế khoản phải thu đã đăng ký">
     <div className={s.chartGrid} />
     <svg className={s.lineSvg} viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><polyline points={points} /></svg>
+    <div className={s.lineHitAreas}>{values.map((value, index) => <button key={labels[index]} type="button" aria-label={`${labels[index]}: ${formatMoney(value)}`} onMouseEnter={() => setActiveIndex(index)} onMouseLeave={() => setActiveIndex(null)} onFocus={() => setActiveIndex(index)} onBlur={() => setActiveIndex(null)} style={{ left: `${index / (values.length - 1) * 100}%`, top: `${100 - value / max * 78 - 9}%` }} />)}</div>
+    {activeIndex !== null && <div className={s.lineTooltip} style={{ left: `${Math.max(12, Math.min(88, activeIndex / (values.length - 1) * 100))}%`, top: `${Math.max(9, 100 - values[activeIndex] / max * 78 - 9)}%` }}><small>{labels[activeIndex]}</small><b>{formatMoney(values[activeIndex])}</b></div>}
     <div className={s.lineLabels}>{labels.map((label) => <small key={label}>{label}</small>)}</div>
   </div>;
 }

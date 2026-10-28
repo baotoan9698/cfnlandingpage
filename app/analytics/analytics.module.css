@@ -6,3 +6,11 @@
 .barTooltip { position: absolute; z-index: 3; bottom: 42px; left: 50%; min-width: 82px; padding: 7px 9px; color: #14315b; background: rgba(255,255,255,.98); border: 1px solid #cfdbed; border-radius: 5px; box-shadow: 0 7px 16px rgba(24,56,106,.13); pointer-events: none; transform: translateX(-50%); text-align: center; white-space: nowrap; }
 .barTooltip small { display: block; color: #73849b; font-size: 9px; }
 .barTooltip b { display: block; margin-top: 2px; font-size: 12px; }
+
+.lineHitAreas { position: absolute; inset: 0 0 24px; z-index: 2; }
+.lineHitAreas button { position: absolute; width: 42px; height: 42px; border: 0; padding: 0; background: transparent; border-radius: 50%; cursor: crosshair; transform: translate(-50%, -50%); }
+.lineHitAreas button::after { position: absolute; inset: 16px; border: 2px solid var(--blue); border-radius: 50%; background: #fff; content: ""; opacity: 0; transition: opacity .15s ease; }
+.lineHitAreas button:hover::after, .lineHitAreas button:focus-visible::after { opacity: 1; }
+.lineTooltip { position: absolute; z-index: 4; min-width: 86px; padding: 7px 9px; color: #14315b; background: rgba(255,255,255,.98); border: 1px solid #cfdbed; border-radius: 5px; box-shadow: 0 7px 16px rgba(24,56,106,.13); pointer-events: none; transform: translate(-50%, calc(-100% - 12px)); text-align: center; white-space: nowrap; }
+.lineTooltip small { display: block; color: #73849b; font-size: 9px; }
+.lineTooltip b { display: block; margin-top: 2px; font-size: 12px; }
