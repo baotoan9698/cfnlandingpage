@@ -19,10 +19,11 @@ function formatMoney(value: number) {
 }
 
 function BarChart({ values, labels }: { values: readonly number[]; labels: readonly string[] }) {
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const max = Math.max(...values);
   return <div className={s.chartWrap} role="img" aria-label="Giá trị khoản phải thu mới theo kỳ">
     <div className={s.chartGrid} />
-    <div className={s.bars}>{values.map((value, index) => <div className={s.barItem} key={labels[index]}><span style={{ height: `${Math.max(10, value / max * 100)}%` }} title={`${formatMoney(value)}`} /><small>{labels[index]}</small></div>)}</div>
+    <div className={s.bars}>{values.map((value, index) => <div className={s.barItem} key={labels[index]} onMouseEnter={() => setActiveIndex(index)} onMouseLeave={() => setActiveIndex(null)}><span style={{ height: `${Math.max(10, value / max * 100)}%` }} /><small>{labels[index]}</small>{activeIndex === index && <div className={s.barTooltip}><small>{labels[index]}</small><b>{formatMoney(value)}</b></div>}</div>)}</div>
   </div>;
 }
 
@@ -42,8 +43,9 @@ function FunnelChart({ records }: { records: number }) {
 }
 
 function MaturityWall({ total }: { total: number }) {
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const ratios = [14, 22, 27, 19, 11, 7], labels = ["Tuần 1", "Tuần 2", "Tuần 3", "Tuần 4", "Tuần 5", "Tuần 6+"]; const max = Math.max(...ratios);
-  return <div className={x.maturityWall} role="img" aria-label="Giá trị khoản phải thu đáo hạn trong sáu tuần tới">{ratios.map((ratio, index) => <div key={labels[index]}><span style={{ height: `${ratio / max * 100}%` }} title={formatMoney(total * ratio / 100)} /><small>{labels[index]}</small></div>)}</div>;
+  return <div className={x.maturityWall} role="img" aria-label="Giá trị khoản phải thu đáo hạn trong sáu tuần tới">{ratios.map((ratio, index) => <div key={labels[index]} onMouseEnter={() => setActiveIndex(index)} onMouseLeave={() => setActiveIndex(null)}><span style={{ height: `${ratio / max * 100}%` }} /><small>{labels[index]}</small>{activeIndex === index && <div className={x.maturityTooltip}><small>{labels[index]}</small><b>{formatMoney(total * ratio / 100)}</b><em>{ratio}% danh mục</em></div>}</div>)}</div>;
 }
 
 const sectorSeries = [
