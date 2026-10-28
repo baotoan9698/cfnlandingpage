@@ -1,0 +1,85 @@
+.stackSvg line {
+  stroke: #dfe7f3;
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+}
+
+.stackSvg text {
+  font-family: Manrope, Arial, sans-serif;
+  fill: #8191a8;
+  font-size: 12px;
+}
+
+.axis {
+  fill: #637895 !important;
+  font-size: 12px !important;
+}
+
+.yAxis {
+  fill: #91a1b8;
+  font-size: 11px;
+}
+
+.activeLine {
+  stroke: #1d4fbb !important;
+  stroke-width: 1 !important;
+  stroke-dasharray: 4 4;
+}
+
+.activeDot {
+  fill: #fff;
+  stroke: #1d4fbb;
+  stroke-width: 3;
+}
+
+.tooltip {
+  position: absolute;
+  top: 14px;
+  z-index: 2;
+  width: 216px;
+  padding: 12px;
+  color: #14315b;
+  background: rgba(255, 255, 255, .97);
+  border: 1px solid #cfdbed;
+  border-radius: 6px;
+  box-shadow: 0 9px 22px rgba(24, 56, 106, .13);
+  pointer-events: none;
+  transform: translateX(-50%);
+}
+
+.tooltip small {
+  display: block;
+  color: #72829a;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.tooltip > strong {
+  display: block;
+  margin: 3px 0 9px;
+  font-size: 20px;
+  letter-spacing: -.05em;
+}
+
+.tooltip div { display: grid; gap: 5px; }
+
+.tooltip span {
+  display: grid;
+  grid-template-columns: 8px 1fr auto;
+  align-items: center;
+  gap: 6px;
+  color: #526682;
+  font-size: 10px;
+}
+
+.tooltip i { width: 7px; height: 7px; border-radius: 50%; }
+.tooltip b { color: #1d3558; font-size: 10px; }
+
+@media (max-width: 650px) {
+  .stackSvg text { font-size: 10px; }
+  .axis { font-size: 9px !important; }
+  .yAxis { display: none; }
+  .tooltip { width: 190px; padding: 10px; }
+}
