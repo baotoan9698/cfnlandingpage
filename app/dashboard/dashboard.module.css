@@ -1,0 +1,64 @@
+.app{min-height:100vh;background:#f4f8ff;color:#092d63;font-family:Manrope,Arial,sans-serif;font-variant-numeric:tabular-nums}.header{height:64px;padding:0 34px;display:flex;align-items:center;gap:46px;background:#082e63;color:#fff}.logo{display:flex;align-items:center;gap:7px;color:#fff;letter-spacing:.04em}.logo i{width:18px;height:18px;border:3px solid #fff;border-radius:5px;position:relative}.logo i:after{content:"";position:absolute;width:6px;height:6px;left:3px;top:3px;background:#3b83f5;border-radius:2px}.logo b{font-size:21px;letter-spacing:.08em}.logo span{font-size:13px;color:#8cc2ff;border-left:1px solid #6e99cf;padding-left:7px}.header nav{height:100%;display:flex;align-items:center;gap:31px}.header nav a{height:100%;padding:23px 2px 17px;color:#b9d1f0;font-size:12px}.header nav .active{color:#fff;border-bottom:3px solid #d9b127}.profile{margin-left:auto;display:flex;align-items:center;gap:16px;font-size:12px}.profile button{border:0;background:transparent;color:#c3ddff;font-size:17px}.profile b{font-size:12px}.profile small{color:#a8c8ed}.avatar{width:28px;height:28px;display:grid;place-items:center;border-radius:50%;background:#1c579e;font-size:10px;font-weight:800}.subnav{padding:13px 34px;background:#0c376e;display:flex;justify-content:space-between;align-items:center;gap:20px}.subnav>div{display:flex;gap:7px}.subnav button{border:1px solid transparent;padding:8px 13px;border-radius:16px;background:transparent;color:#c9ddf7;font:600 11px Manrope,Arial}.subnav button.selected{background:#e8b65b;color:#092d63}.subnav p{margin:0;color:#bdd1ee;font-size:10px}.content{max-width:1450px;margin:auto;padding:28px 34px 38px}.sectionTitle{display:flex;justify-content:space-between;align-items:end;margin-bottom:22px}.sectionTitle h1{font-size:20px;letter-spacing:-.05em;margin:0}.sectionTitle span{font-size:11px;color:#52729f}.labelRow{display:grid;grid-template-columns:2fr 1fr 1.2fr;gap:18px;margin-bottom:10px;color:#41668f;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.06em}.metricGrid{display:grid;grid-template-columns:2fr 1.25fr 1.15fr .9fr 1fr;gap:12px}.metricGrid article,.glance,.tableCard{background:#fff;border:1px solid #d4e2f4;border-radius:8px;box-shadow:0 7px 18px rgba(12,51,105,.07)}.metricGrid article{min-height:142px;padding:16px}.metricGrid article>b{font-size:21px;letter-spacing:-.05em}.metricGrid article>small,.metricGrid article strong small{margin-left:3px;font-size:9px;color:#52729f}.metricGrid p{font-size:10px;margin:4px 0 14px;color:#537196}.wideMetric{display:flex;gap:12px;justify-content:space-between}.stacks{height:6px;display:flex;overflow:hidden;border-radius:3px;background:#eaf1fb}.stacks i{display:block;height:100%;background:#2865ed}.stacks i:nth-child(2){background:#78a1f5}.stacks i:nth-child(3){background:#a9c2f9}.stacks i:nth-child(4){background:#d3e0f8}.legend{display:flex;flex-wrap:wrap;gap:4px 10px;margin-top:10px;color:#52729f;font-size:9px}.legend span:first-child{color:#2865ed}.ring{position:relative;width:92px;align-self:center;flex:0 0 92px}.ring svg{display:block;transform:rotate(-90deg)}.ring circle{fill:none;stroke-width:9}.ringTrack{stroke:#e7effa}.ringFill{stroke:#e6b14c;stroke-linecap:round}.ring>span{position:absolute;inset:0;display:grid;place-content:center;text-align:center}.ring b{font-size:17px;letter-spacing:-.06em}.ring small{display:block!important;margin:0!important;font-size:8px!important;color:#52729f}.rateList{display:grid;gap:5px}.rateList span{display:flex;justify-content:space-between;font-size:9px;color:#537196}.rateList b{color:#154985}.metricGrid strong{font-size:16px;letter-spacing:-.04em}.detailButton{margin-top:11px;padding:6px 9px;border:1px solid #2865ed;border-radius:4px;background:#fff;color:#174b9d;font:700 10px Manrope,Arial}.bodyGrid{display:grid;grid-template-columns:.9fr 1.6fr;gap:14px;margin-top:28px}.glance,.tableCard{padding:20px}.glance h2,.tableCard h2{font-size:14px;margin:0}.glanceTabs{display:grid;grid-template-columns:repeat(4,1fr);gap:5px;margin:22px 0}.glanceTabs button{border:0;background:transparent;color:#6380a5;font-size:24px}.glanceTabs button.active{color:#d8a62b}.glanceTabs small{display:block;margin-top:6px;font:600 9px Manrope,Arial}.grade{border-top:1px solid #dbe7f6;padding-top:17px}.grade h3{font-size:12px;margin:0}.gradeBody{display:grid;grid-template-columns:145px 1fr;align-items:center;gap:14px}.gradeBody svg{transform:rotate(-90deg)}.gradeBody circle{fill:none;stroke-width:17}.donutTrack{stroke:#ebf2fb}.donutA{stroke:#e5b24e;stroke-dasharray:119 145;stroke-dashoffset:0}.donutB{stroke:#3a9f9c;stroke-dasharray:66 198;stroke-dashoffset:-124}.donutC{stroke:#608eea;stroke-dasharray:79 185;stroke-dashoffset:-195}.gradeBody p{display:grid;grid-template-columns:8px 1fr;gap:6px;margin:7px 0;font-size:10px;color:#507098}.gradeBody p b{grid-column:2;color:#123d78}.gradeBody i{width:7px;height:7px;border-radius:50%;align-self:center}.gold{background:#e5b24e}.teal{background:#3a9f9c}.blue{background:#608eea}.tableHead{display:flex;align-items:end;justify-content:space-between;border-bottom:1px solid #dbe7f6;padding-bottom:16px}.tableHead>span{font-size:10px;color:#6580a1}.tableHead>div>div{display:flex;gap:13px;margin-top:12px}.tableHead button{border:0;background:transparent;padding:0;color:#7088a8;font:700 10px Manrope,Arial;text-transform:uppercase}.tableHead button.active{color:#164b94;border-bottom:2px solid #d5a323;padding-bottom:7px}.dataTable{font-size:11px}.tableLabels,.tableRow{display:grid;grid-template-columns:.35fr 1.7fr 1.45fr .9fr 1.1fr;gap:12px;align-items:center}.tableLabels{padding:14px 0 9px;color:#6683a7;font-size:9px;text-transform:uppercase}.tableRow{padding:11px 0;border-top:1px solid #edf3fa;color:#496b93}.tableRow b{color:#174681}.totalRow{display:flex;justify-content:flex-end;gap:40px;padding-top:12px;border-top:1px solid #cdddf1;color:#163f77;font-size:11px}.totalRow b{font-size:12px}.footer{padding:14px 34px;border-top:1px solid #d4e2f4;color:#6481a4;font-size:10px}.footer span{float:right}@media(max-width:1100px){.metricGrid{grid-template-columns:repeat(3,1fr)}.wideMetric{grid-column:span 2}.bodyGrid{grid-template-columns:1fr}.labelRow{display:none}}@media(max-width:680px){.header{padding:0 18px;gap:20px}.header nav{display:none}.profile b,.profile small,.profile button{display:none}.subnav{padding:10px 18px;overflow:auto}.subnav p{display:none}.subnav>div{width:max-content}.content{padding:24px 16px}.metricGrid{grid-template-columns:1fr}.wideMetric{grid-column:auto}.bodyGrid{margin-top:16px}.gradeBody{grid-template-columns:120px 1fr}.tableCard{overflow:auto}.tableHead{min-width:620px}.dataTable{min-width:620px}.sectionTitle{display:block}.sectionTitle span{display:block;margin-top:7px}.footer{padding:14px 16px}.footer span{float:none;display:block;margin-top:5px}}
+
+/* GOE dark portfolio treatment: compact portfolio board, blue as data and amber as the selected scope. */
+.app { background: #071a34; color: #edf5ff; }
+.header { background: #08254d; border-bottom: 1px solid #21436d; }
+.logo span { color: #7fb5ff; border-color: #315881; }
+.header nav a { color: #a9c1df; }
+.header nav .active { color: #fff; border-bottom-color: #e1b34c; }
+.profile { color: #f3f7ff; }
+.profile button,.profile small { color: #a9c1df; }
+.avatar { background: #1d5fbf; }
+.subnav { background: #0a2d5a; border-bottom: 1px solid #21436d; }
+.subnav button { color: #b6cbe6; }
+.subnav button.selected { background: #e4b34e; color: #071a34; }
+.subnav p { color: #aec4df; }
+.content { background: #071a34; }
+.sectionTitle h1 { color: #f4f7fc; }
+.sectionTitle span,.labelRow { color: #a5b8d3; }
+.metricGrid article,.glance,.tableCard { background: #0d2a52; border-color: #264a76; box-shadow: none; }
+.metricGrid article>b,.metricGrid strong,.rateList b,.glance h2,.tableCard h2,.totalRow,.tableRow b { color: #f4f7fc; }
+.metricGrid article>small,.metricGrid article strong small,.metricGrid p,.rateList span,.legend,.sectionTitle span,.tableHead>span,.tableLabels,.tableRow { color: #a9bdd8; }
+.stacks { background: #173d6c; }
+.stacks i { background: #2e79e6; }.stacks i:nth-child(2){background:#5f9cf0}.stacks i:nth-child(3){background:#8db8f6}.stacks i:nth-child(4){background:#b8d4fb}
+.ringTrack { stroke: #183c69; }.ringFill { stroke: #e4b34e; }.ring small { color: #aac0dc !important; }
+.detailButton { background: transparent; border-color: #4f89dc; color: #d5e6ff; }
+.glanceTabs button { color: #9cb2ce; }.glanceTabs button.active { color: #e4b34e; }
+.grade,.tableHead,.tableRow,.totalRow { border-color: #264a76; }
+.gradeBody p { color: #acc0da; }.gradeBody p b { color: #f0f6ff; }
+.donutTrack { stroke: #183b67; }.donutA { stroke:#e4b34e; }.donutB { stroke:#65a1f2; }.donutC { stroke:#2b70d5; }
+.tableHead button { color:#91abc9; }.tableHead button.active { color:#f3f7ff; border-bottom-color:#e4b34e; }
+.footer { border-color:#21436d; color:#9db4d0; }
+@media (min-width:901px){.metricGrid{grid-template-columns:1.75fr 1.25fr 1.1fr .9fr .95fr}.metricGrid article{min-width:0}.metricGrid article>b{font-size:19px}.wideMetric{gap:6px}.ring{width:78px;flex-basis:78px}.legend{gap:3px 6px;font-size:8px}}
+@media (min-width:901px){.wideMetric{grid-column:auto}}
+
+/* Airier GOE canvas: a light blue-grey workspace with navy retained only for navigation. */
+.app,.content { background: #edf4fc; color: #0b315f; }
+.sectionTitle h1 { color: #0b315f; }
+.sectionTitle span,.labelRow { color: #5b789c; }
+.metricGrid article,.glance,.tableCard { background: #ffffff; border-color: #d4e2f2; }
+.metricGrid article>b,.metricGrid strong,.rateList b,.glance h2,.tableCard h2,.totalRow,.tableRow b { color: #0b315f; }
+.metricGrid article>small,.metricGrid article strong small,.metricGrid p,.rateList span,.legend,.tableHead>span,.tableLabels,.tableRow { color: #607c9e; }
+.stacks { background: #e9f0f9; }.stacks i { background:#2865ed; }.stacks i:nth-child(2){background:#6194ee}.stacks i:nth-child(3){background:#98b8f5}.stacks i:nth-child(4){background:#c5d9f8}
+.ringTrack { stroke:#e7eff9; }.ringFill { stroke:#d7a12c; }.ring small { color:#607c9e !important; }
+.detailButton { background:#fff; border-color:#3e78cd; color:#174b9d; }
+.glanceTabs button { color:#7890ad; }.glanceTabs button.active { color:#c79119; }
+.grade,.tableHead,.tableRow,.totalRow { border-color:#dce8f5; }
+.gradeBody p { color:#607c9e; }.gradeBody p b { color:#153f78; }
+.donutTrack { stroke:#eaf1fb; }.donutA{stroke:#d7a12c}.donutB{stroke:#6194ee}.donutC{stroke:#2b70d5}
+.tableHead button { color:#6a85a5; }.tableHead button.active { color:#164b94; border-bottom-color:#d6a02a; }
+.footer { border-color:#d4e2f2; color:#6b85a4; }
+
+.ring > span { width: 62px; margin: auto; line-height: 1; }
+.ring > span b { display: block; margin-bottom: 3px; white-space: nowrap; }
+.ring > span small { min-height: 16px; white-space: pre-line; line-height: 1.05; }
+
+/* Verification ring and grade donut: labels live outside the centre; data appears on hover or focus. */
+.ringWrap { position: relative; width: 96px; flex: 0 0 96px; align-self: center; text-align: center; }
+.ring { width: 78px; height: 78px; padding: 0; border: 0; background: transparent; color: inherit; cursor: pointer; }
+.ring > span { width: auto; margin: 0; line-height: 1; }.ring > span b { margin: 0; font-size: 17px; }.ring > span small { display: none !important; }
+.ringLabel { display: block !important; min-height: 24px; margin: 3px -6px 0 !important; color: #607c9e !important; font-size: 9px !important; line-height: 1.15 !important; white-space: normal !important; }
+.ringTooltip,.donutTooltip { position: absolute; z-index: 5; width: max-content; max-width: 178px; padding: 8px 10px; border: 1px solid #cadcf1; border-radius: 5px; background: #fff; color: #0b315f; box-shadow: 0 8px 18px rgba(18,55,100,.14); font-size: 10px; pointer-events: none; }
+.ringTooltip { right: -70px; top: 24px; text-align: left; }.ringTooltip b,.ringTooltip span,.donutTooltip b,.donutTooltip span { display: block; }.ringTooltip span,.donutTooltip span { margin-top: 3px; color: #607c9e; }
+.donutWrap { position: relative; width: 145px; height: 145px; }.donutWrap svg { width: 145px; height: 145px; transform: rotate(-90deg); }.donutWrap circle { cursor: pointer; outline: none; }.donutWrap circle:focus { stroke-width: 20; }.donutTooltip { left: 50%; top: 50%; transform: translate(-50%,-50%); text-align: center; }
+@media (min-width:901px){.ringWrap{width:84px;flex-basis:84px}.ringTooltip{right:-88px}.donutWrap{width:132px;height:132px}.donutWrap svg{width:132px;height:132px}}
